@@ -1,5 +1,6 @@
 <script lang="ts">
     import AmptLogo from '$lib/images/ampt.svg'
+    import NavBar from '../components/NavBar.svelte';
     import type { PageData } from './$types'
     export let data: PageData
     export let url = data.url
@@ -13,6 +14,7 @@
 
 <body>
     <div class="container">
+        <NavBar></NavBar>
         <div class="column">
             <div class="circle">
                 <img style="align-self: center;" src={AmptLogo} alt="Ampt Logo" width="150" height="150" />
@@ -130,7 +132,6 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;

@@ -3,7 +3,7 @@ import adapter from "@ampt/sveltekit";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: vitePreprocess(),
+  preprocess: [vitePreprocess({})],
   kit: {
     files: {
       assets: "assets",
